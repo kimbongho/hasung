@@ -10,7 +10,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn"><strong>한성응급환자이송단은</strong></p>
+                                    <p class="fs-4 text-white animated zoomIn"><strong>c c c c c c c 한성응급환자이송단은</strong></p>
                                     <h1 class="text-dark mb-4 animated zoomIn">신속, 정확, 안정하게 그리고 체계적인<br/> 서비스를 제공합니다.</h1>
                                     <!--<a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a>-->
                                 </div>
