@@ -415,7 +415,7 @@
     import {ref, onMounted} from 'vue'
     import WOW from 'wow.js'
     import Header from '@/components/Header.vue'
-    import Footer from '@/components/Footer.vue'
+    import Footer from '@/components/FooterNew.vue'
 
     onMounted(() =>{
         new WOW().init()
