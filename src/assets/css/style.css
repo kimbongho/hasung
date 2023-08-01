@@ -16,6 +16,12 @@
     font-weight: 700;
   }
 
+  @font-face {
+    font-family:'NotoSansKR';
+    src: url('@/assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
  h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
    font-family: 'NanumGothic', 'Roboto' !important;
    font-size: 2rem;
@@ -42,7 +48,7 @@ body{
     position: fixed;
     display: none;
     right: 30px;
-    bottom: 30px;
+    bottom: 15px;
     z-index: 99;
 }
 
@@ -153,6 +159,9 @@ body{
     vertical-align: middle;
     margin-left: 8px;
 }
+.fixFooter {
+    display: none;
+}
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand {
@@ -239,6 +248,11 @@ body{
         height: 100%;
         object-fit: cover;
     }
+
+    .fixFooter {
+        display: block;
+    }
+
 }
 
 .page-header {
@@ -462,7 +476,8 @@ body{
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(@/assets/images/testimonial-bg.jpg) center center no-repeat;
+    
+    background: linear-gradient(rgba(215 231 249 / 70%),rgba(215 231 249 / 70%)), url(@/assets/images/testimonial-bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
