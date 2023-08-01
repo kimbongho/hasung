@@ -416,10 +416,6 @@
     import WOW from 'wow.js'
     import Header from '@/components/Header.vue'
     import Footer from '@/components/FooterNew.vue'
-    import { useMobileDetection } from 'vue3-mobile-detection'
-
-    const { isMobile } = useMobileDetection()
-    
     const phoneCall = () => {
         location.href = 'tel:01072371806'
     }
