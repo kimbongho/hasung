@@ -391,8 +391,8 @@
                             <div class="btn-square mx-auto mb-3">
                                 <i class="fa fa-phone fa-2x text-white"></i>
                             </div>
-                            <p class="mb-2">010-6295-6370</p>
-                            <p class="mb-0">1588-6370</p>
+                            <p class="mb-2" @click="phoneCall">010-6295-6370</p>
+                            <p class="mb-0" @click="phoneCall">1588-6370</p>
                         </div>
                         <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
                             <div class="btn-square mx-auto mb-3">
@@ -416,6 +416,13 @@
     import WOW from 'wow.js'
     import Header from '@/components/Header.vue'
     import Footer from '@/components/FooterNew.vue'
+    import { useMobileDetection } from 'vue3-mobile-detection'
+
+    const { isMobile } = useMobileDetection()
+    
+    const phoneCall = () => {
+        location.href = 'tel:01072371806'
+    }
 
     onMounted(() =>{
         new WOW().init()

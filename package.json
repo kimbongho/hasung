@@ -19,6 +19,7 @@
     "owl.carousel": "^2.3.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",
+    "vue3-mobile-detection": "^1.0.5",
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
