@@ -319,7 +319,7 @@ body{
 
 /*** Products ***/
 .product {
-    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1));
+    background: linear-gradient(rgba(215 231 249 / 70%),rgba(215 231 249 / 70%));
     background-size: auto;
 }
 

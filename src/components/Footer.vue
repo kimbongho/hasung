@@ -8,23 +8,15 @@
                   <p>법인명 : (주)한성응급환자이송단</p>
                   <p>대표자명 : 김동수</p>
                   <p>사업자등록번호 : 457-87-01642</p>
-                  <!--
-                  <div class="d-flex pt-3">
-                      <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                      <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-                  -->
               </div>
               <div class="col-lg-3 col-md-6">
                   <h4 class="text-primary mb-4">Quick Links</h4>
-                  <a class="btn btn-link" href="">회사소개</a>
-                  <a class="btn btn-link" href="">서비스소개</a>
-                  <a class="btn btn-link" href="">응급이송후기</a>
-                  <a class="btn btn-link" href="">구급차요금표</a>
-                  <a class="btn btn-link" href="">병원안내</a>
-                  <a class="btn btn-link" href="">오시는길</a>
+                  <a class="btn btn-link" @click="$router.push('/about')">회사소개</a>
+                  <a class="btn btn-link" @click="$router.push('/service')">행사소개</a>
+                  <a class="btn btn-link" @click="$router.push('/emergency')">응급이송후기</a>
+                  <a class="btn btn-link" @click="$router.push('/paytable')">구급차요금표</a>
+                  <a class="btn btn-link" @click="$router.push('/hospital')">병원안내</a>
+                  <a class="btn btn-link" @click="$router.push('/contract')">오시는길</a>
               </div>
               <div class="col-lg-3 col-md-6">
                   <h4 class="text-primary mb-4">업무시간</h4>
@@ -63,22 +55,73 @@
   <a href="#" class="btn btn-lg btn-dark btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
   <div class="fixFooter">
+        <div class="d-flex justify-content-center pt-4">
+            <a class="btn btn-square btn-blue rounded-circle me-2" @click="btnIconClick('message')"><i class="fa fa-comments" aria-hidden="true"></i></a>
+            <a class="btn btn-square btn-blue rounded-circle me-2" @click="btnIconClick('phone')"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a class="btn btn-square btn-blue rounded-circle me-2" @click="goContract"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+        </div>
   </div>
 </template>
 
 <script setup>
-    
+
+  import {ref, onMounted} from 'vue'
+  import TelGuide from '@/components/TelGuide.vue'
+  import { useRouter } from 'vue-router';
+  
+  const router =  useRouter();
+  const goContract = () => {
+    router.push('/contract')
+  }
+
+  const phoneCall = () => {
+      location.href = 'tel:01072371806'
+  }
+
+  const phoneSms = () => {
+      location.href = 'sms:01072371806'
+  }
+  const isMobile = () => {
+      if( screen.width <= 768 ) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+
+
+  const btnIconClick = (type) => {
+      if(isMobile()){
+          if(type === 'message'){
+              phoneSms();
+          } else if (type === 'phone'){
+              phoneCall();
+          }
+      }else{
+          $('#telGuideModal').modal('show');
+      }
+      
+  }
+
+  
+
 </script>
 
 <style>
     .fixFooter{
-    background: rgba(215 231 249 / 70%);
-    position: fixed;
-    bottom: 0; 
-    left: 0;
-    height: 80px;
-    width: 100%;
-    z-index: 1;
-    
+        background: rgba(215 231 249 / 70%);
+        position: fixed;
+        bottom: 0; 
+        left: 0;
+        height: 80px;
+        width: 100%;
+        z-index: 1;
     }
+    .btn-blue {
+        color: #fff;
+        background-color: #007bff;
+        border-color:#007bff;
+    }
+
+    
 </style>

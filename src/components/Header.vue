@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <RouterLink class="nav-item nav-link" to="/about">회사소개</RouterLink>
-                        <RouterLink class="nav-item nav-link" to="/service">서비스소개</RouterLink>
+                        <RouterLink class="nav-item nav-link" to="/service">행사소개</RouterLink>
                         <RouterLink class="nav-item nav-link" to="/emergency">응급이송후기</RouterLink> 
                         <RouterLink class="nav-item nav-link" to="/paytable">구급차요금표</RouterLink>
                         <RouterLink class="nav-item nav-link" to="/hospital">병원안내</RouterLink>

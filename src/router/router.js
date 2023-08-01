@@ -40,10 +40,10 @@ const router = createRouter({
         },
         {
           path: '/service',
-          name: '서비스소개',
+          name: '행사소개',
           meta: {
             depth1: '홈',
-            depth2: '서비스소개',
+            depth2: '행사소개',
           }, 
          component: ServiceView
         },

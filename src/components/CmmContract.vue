@@ -22,7 +22,7 @@
                         </div>
                         <p class="mb-2" data-bs-toggle="modal" data-bs-target="#telGuideModal">전화상담</p>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s" @click="btnIconClick('road')">
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s" @click="goContract">
                         <div class="btn-square mx-auto mb-3">
                             <i class="fa fa-map-marker-alt fa-2x text-white"></i>
                         </div>
@@ -39,6 +39,12 @@
 <script setup>
   import {ref, onMounted} from 'vue'
   import TelGuide from '@/components/TelGuide.vue'
+  import { useRouter } from 'vue-router';
+
+  const router =  useRouter();
+  const goContract = () => {
+    router.push('/contract')
+  }
 
   const phoneCall = () => {
       location.href = 'tel:01072371806'
@@ -54,9 +60,7 @@
           return false;
       }
   }
-  const popCall = (event) => {
-      console.log(event)
-  }
+
 
   const btnIconClick = (type) => {
       if(isMobile()){
