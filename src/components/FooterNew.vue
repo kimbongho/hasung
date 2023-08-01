@@ -5,8 +5,9 @@
           <div class="row g-5">
               <div class="col-lg-3 col-md-6">
                   <h4 class="text-primary mb-4">회사소개</h4>
-                  <p>법인명 : 한성응급구조이송단</p>
-                  <p>사업자등록번호 : 123-12-12345</p>
+                  <p>법인명 : (주)한성응급환자이송단</p>
+                  <p>대표자명 : 김동수</p>
+                  <p>사업자등록번호 : 457-87-01642</p>
                   <!--
                   <div class="d-flex pt-3">
                       <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -48,7 +49,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  <a class="fw-medium" href="#">COPYRIGHT &copy; 한성응급구조이송단</a>, All Right Reserved.
+                  <a class="fw-medium" href="#">COPYRIGHT &copy; (주)한성응급환자이송단</a>, All Right Reserved.
               </div>
               <div class="col-md-6 text-center text-md-end">
               </div>

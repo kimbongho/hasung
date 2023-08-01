@@ -24,7 +24,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 text-center">
-                                    <p class="fs-4 text-white animated zoomIn"><strong>저희 응급환자 이송센터는 112, 119 구조 · 구급 · 재난 · 재해 시</strong></p>
+                                    <p class="fs-4 text-white animated zoomIn"><strong>저희 응급환자 이송센터는<br/>112, 119 구조 · 구급 · 재난 · 재해 시</strong></p>
                                     <h1 class="text-dark mb-4 animated zoomIn">먼저 차량지원과 의료지원을 원칙으로 하며<br/> 응급환자이송업무를 최선으로 하는 업체입니다. </h1>
                                     <!--<a href="" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Explore More</a>-->
                                 </div>

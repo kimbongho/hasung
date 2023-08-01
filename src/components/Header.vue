@@ -25,6 +25,9 @@
                         <RouterLink class="nav-item nav-link" to="/hospital">병원안내</RouterLink>
                         <RouterLink class="nav-item nav-link" to="/contract">오시는길</RouterLink>
                     </div>
+                    <div class="border-start ps-4 d-none d-lg-block">
+                        <button type="button" class="btn btn-sm p-0" @click="phoneCall"><i class="fa fa-phone"></i></button>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -48,6 +51,10 @@
             stickyTopClass.value = ''
             stickyTopStyle.value = 'top:-150px'
         }
+    }
+
+    const phoneCall = () => {
+        location.href = 'tel:01072371806'
     }
 
     onMounted(() =>{
