@@ -18,9 +18,17 @@
 
   @font-face {
     font-family:'NotoSansKR';
-    src: url('@/assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+    src: url('@/assets/fonts/NotoSansKR-Bold.otf') format('truetype');
     font-weight: 700;
   }
+
+  @font-face {
+    font-family:'NotoSansKRLight';
+    src: url('@/assets/fonts/NotoSansKR-Light.otf') format('truetype');
+    font-weight: 700;
+  }
+
+  
 
  h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
    font-family: 'NanumGothic', 'Roboto' !important;

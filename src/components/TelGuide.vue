@@ -127,7 +127,7 @@ button.close {
 }
 .modal-content p{
   color: #616161;
-  font-family: 'NotoSansKR' !important;
+  font-family: 'NotoSansKRLight' !important;
 }
 
 </style>
