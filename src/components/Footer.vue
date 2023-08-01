@@ -61,7 +61,24 @@
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-dark btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <div class="fixFooter">
+  </div>
 </template>
 
 <script setup>
+    
 </script>
+
+<style>
+    .fixFooter{
+    background: rgba(215 231 249 / 70%);
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    
+    }
+</style>

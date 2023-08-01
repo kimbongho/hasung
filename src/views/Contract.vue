@@ -1,11 +1,13 @@
 <template>
-    <div class="container-xxl py-5">
+    <CmmContract/>    
+    <div class="container-xxl contact py-5">
         <div class="container">
-            Contract View
+            <Map/>
         </div>
     </div>
-</template>
-
+ </template>
 <script setup>
+    import CmmContract from '@/components/CmmContract.vue'
+    import Map from '@/components/Map.vue'
   
 </script>

@@ -11,7 +11,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
                 <RouterLink class="navbar-brand" to="/home">
-                  <img class="img-fluid" src="@/assets/images/logo.png" alt="Logo">
+                  <img class="img-fluid" src="@/assets/images/text_logo.png" alt="Logo">
                 </RouterLink>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
