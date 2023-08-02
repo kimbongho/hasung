@@ -64,13 +64,17 @@
         setTimeout(() => {
             spinnerClass.value = spinnerClass.value.replace('show', '')
         }, 1);
-
         
-        Kakao.init('3a085facd5696e3d61e79b8acfb23e75');
         Kakao.Channel.createAddChannelButton({
             container: '#add-channel-button',
             channelPublicId: '_igxmZG',
         })
+        
+        Kakao.Channel.createChatButton({
+          container: '#chat-channel-button',
+          channelPublicId: '_igxmZG',
+        });
+
     })
 
 

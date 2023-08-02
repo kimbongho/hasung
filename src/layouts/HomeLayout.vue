@@ -151,7 +151,6 @@
 
     onMounted(() =>{
         new WOW().init()
-       
         $(".product-carousel").owlCarousel({
             autoplay: true,
             smartSpeed: 1000,
@@ -189,7 +188,6 @@
             dots: true,
             nav: false,
         });
-
     })
 
 </script>

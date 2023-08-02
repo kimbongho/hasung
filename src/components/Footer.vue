@@ -103,10 +103,7 @@
   }
 
   onMounted(() =>{
-      Kakao.Channel.createChatButton({
-          container: '#chat-channel-button',
-          channelPublicId: '_igxmZG',
-      });
+      
   })
 
  
