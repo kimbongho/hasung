@@ -261,6 +261,12 @@ body{
         display: block;
     }
 
+    .kakaoAddChanner {
+        position: fixed;
+        right: 100px;
+        z-index: 99;
+    }
+
 }
 
 .page-header {

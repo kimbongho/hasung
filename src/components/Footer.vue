@@ -52,6 +52,7 @@
 
 
   <!-- Back to Top -->
+  <div id="chat-channel-button" class="btn-kakaoTalk"></div>
   <a href="#" class="btn btn-lg btn-dark btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
   <div class="fixFooter">
@@ -66,7 +67,6 @@
 <script setup>
 
   import {ref, onMounted} from 'vue'
-  import TelGuide from '@/components/TelGuide.vue'
   import { useRouter } from 'vue-router';
   
   const router =  useRouter();
@@ -100,11 +100,16 @@
       }else{
           $('#telGuideModal').modal('show');
       }
-      
   }
 
-  
+  onMounted(() =>{
+      Kakao.Channel.createChatButton({
+          container: '#chat-channel-button',
+          channelPublicId: '_igxmZG',
+      });
+  })
 
+ 
 </script>
 
 <style>
@@ -121,6 +126,13 @@
         color: #fff;
         background-color: #007bff;
         border-color:#007bff;
+    }
+
+    .btn-kakaoTalk{
+        position: fixed;
+        right: 30px;
+        bottom: 80px;
+        z-index: 99;
     }
 
     
