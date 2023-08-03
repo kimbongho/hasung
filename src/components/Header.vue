@@ -56,7 +56,6 @@
     }
 
     onMounted(() =>{
-      
         // 스크롤 이벤트 바인드
         window.addEventListener('scroll', scrollNav)
         
@@ -64,7 +63,7 @@
         setTimeout(() => {
             spinnerClass.value = spinnerClass.value.replace('show', '')
         }, 1);
-        
+
         Kakao.Channel.createAddChannelButton({
             container: '#add-channel-button',
             channelPublicId: '_igxmZG',

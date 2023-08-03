@@ -7,20 +7,8 @@
                 <h1 class="fs-4">스포츠, 영화, 각종의료지원, 국토대장정 등.. 다향한 행사의료지원 합니다.  </h1>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <a href="" class="d-block product-item rounded">
-                    <img src="@/assets/images/event_01.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="@/assets/images/event_02.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="@/assets/images/event_03.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="@/assets/images/event_04.jpg" alt="">
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="@/assets/images/event_05.jpg" alt="">
+                <a href="" class="d-block product-item rounded" v-for="item in eventList" :key="item">
+                    <img :src="item.imgPath" alt="">
                 </a>
             </div>
         </div>
@@ -137,37 +125,60 @@
 
     import {ref, onMounted} from 'vue'
     import WOW from 'wow.js'
+    import { useStore } from 'vuex'
+
+    const store = useStore()
+    const event = store.state.subStore.event;
+    const eventList = ref([
+        {
+             desc: ''
+            ,imgPath:'./src/assets/images/event_01.jpg'
+            ,name:''
+            ,position:''
+        },
+        {
+             desc: ''
+            ,imgPath:'./src/assets/images/event_02.jpg'
+            ,name:''
+            ,position:''
+        },
+        {
+             desc: ''
+            ,imgPath:'./src/assets/images/event_03.jpg'
+            ,name:''
+            ,position:''
+        },
+        {
+             desc: ''
+            ,imgPath:'./src/assets/images/event_04.jpg'
+            ,name:''
+            ,position:''
+        },
+        {
+             desc: ''
+            ,imgPath:'./src/assets/images/event_05.jpg'
+            ,name:''
+            ,position:''
+        },
+    ])
 
     onMounted(() =>{
-         new WOW().init()
-    
-        $(".product-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            margin: 25,
-            loop: true,
-            center: true,
-            dots: false,
-            nav: true,
-            navElement:'div',
-            navText : [
-                '<i class="bi bi-chevron-left"></i>',
-                '<i class="bi bi-chevron-right"></i>'
-            ],
-            responsive: {
-                0:{
-                    items:1
-                },
-                576:{
-                    items:1
-                },
-                768:{
-                    items:2
-                },
-                992:{
-                    items:3
-                }
-            }
-        });
+        new WOW().init()
+        store.commit('subStore/setEvent',
+            $(".product-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                center: true,
+                dots: false,
+                nav: true,
+                navElement:'div',
+                navText : [
+                    '<i class="bi bi-chevron-left"></i>',
+                    '<i class="bi bi-chevron-right"></i>'
+                ],
+            })
+        )
     });   
 </script>
