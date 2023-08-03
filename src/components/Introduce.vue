@@ -25,22 +25,25 @@
 
 <script setup>
     import {ref, onMounted} from 'vue'
+    import img1 from '@/assets/images/testimonial-3.jpg'
+    import img2 from '@/assets/images/testimonial-1.jpg'
+    import img3 from '@/assets/images/testimonial-2.jpg'
     const introduceList = ref([
         {
              desc: '운전경력15년 환자의 안전과 생명을 최우선으로 생각하고, 친절히 모시겠습니다.'
-            ,imgPath:'./src/assets/images/testimonial-3.jpg'
+            ,imgPath: img1
             ,name:'김동수'
             ,position:'대표이사'
         },
         {
              desc: '운전경력10년 구급차 운전 및 응급구조사 2급 보유 신속, 정확, 안전하게 모시겠습니다.'
-            ,imgPath:'./src/assets/images/testimonial-1.jpg'
+            ,imgPath: img2
             ,name:'김지환'
             ,position:'본부장'
         },
         {
              desc: '경력5년 응급구조사, 언제나 환자만을 생각하면 최선을 다하겠습니다.'
-            ,imgPath:'./src/assets/images/testimonial-2.jpg'
+            ,imgPath: img3
             ,name:'김소연'
             ,position:'과장'
         },

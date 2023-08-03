@@ -125,34 +125,42 @@
 
     import {ref, onMounted} from 'vue'
     import WOW from 'wow.js'
+    import evImg1 from '@/assets/images/event_01.jpg'
+    import evImg2 from '@/assets/images/event_02.jpg'
+    import evImg3 from '@/assets/images/event_03.jpg'
+    import evImg4 from '@/assets/images/event_04.jpg'
+    import evImg5 from '@/assets/images/event_05.jpg'
+    
+
+
     const eventList = ref([
         {
              desc: ''
-            ,imgPath:'./src/assets/images/event_01.jpg'
+            ,imgPath:evImg1
             ,name:''
             ,position:''
         },
         {
              desc: ''
-            ,imgPath:'./src/assets/images/event_02.jpg'
+            ,imgPath:evImg2
             ,name:''
             ,position:''
         },
         {
              desc: ''
-            ,imgPath:'./src/assets/images/event_03.jpg'
+            ,imgPath:evImg3
             ,name:''
             ,position:''
         },
         {
              desc: ''
-            ,imgPath:'./src/assets/images/event_04.jpg'
+            ,imgPath:evImg4
             ,name:''
             ,position:''
         },
         {
              desc: ''
-            ,imgPath:'./src/assets/images/event_05.jpg'
+            ,imgPath:evImg5
             ,name:''
             ,position:''
         },
