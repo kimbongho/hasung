@@ -24,11 +24,7 @@
 </template>
 
 <script setup>
-    import {computed, ref, onMounted} from 'vue'
-    import { useStore } from 'vuex'
-
-    const store = useStore()
-    const introduce = store.state.homeStore.introduce;
+    import {ref, onMounted} from 'vue'
     const introduceList = ref([
         {
              desc: '운전경력15년 환자의 안전과 생명을 최우선으로 생각하고, 친절히 모시겠습니다.'

@@ -125,10 +125,6 @@
 
     import {ref, onMounted} from 'vue'
     import WOW from 'wow.js'
-    import { useStore } from 'vuex'
-
-    const store = useStore()
-    const event = store.state.subStore.event;
     const eventList = ref([
         {
              desc: ''
@@ -164,21 +160,19 @@
 
     onMounted(() =>{
         new WOW().init()
-        store.commit('subStore/setEvent',
-            $(".product-carousel").owlCarousel({
-                autoplay: true,
-                smartSpeed: 1000,
-                margin: 25,
-                loop: true,
-                center: true,
-                dots: false,
-                nav: true,
-                navElement:'div',
-                navText : [
-                    '<i class="bi bi-chevron-left"></i>',
-                    '<i class="bi bi-chevron-right"></i>'
-                ],
-            })
-        )
+        $(".product-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            margin: 25,
+            loop: true,
+            center: true,
+            dots: false,
+            nav: true,
+            navElement:'div',
+            navText : [
+                '<i class="bi bi-chevron-left"></i>',
+                '<i class="bi bi-chevron-right"></i>'
+            ],
+        })
     });   
 </script>

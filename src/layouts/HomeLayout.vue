@@ -103,8 +103,7 @@
 </template>
 
 <script setup>
-
-    import {computed, ref, onMounted} from 'vue'
+    import {onMounted} from 'vue'
     import WOW from 'wow.js'
     import Header from '@/components/Header.vue'
     import Footer from '@/components/Footer.vue'
